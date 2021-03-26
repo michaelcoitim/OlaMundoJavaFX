@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="olamundojavafx.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="olamundojavafx.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnClick" layoutX="105.0" layoutY="121.0" mnemonicParsing="false" onAction="#clicouBotao" prefHeight="39.0" prefWidth="110.0" text="clique em mim " textFill="#171dad" />
+      <Label fx:id="lblMensagem" alignment="CENTER" layoutX="82.0" layoutY="75.0" prefHeight="17.0" prefWidth="156.0" text="Mensagem" textAlignment="CENTER" textFill="#dd0202">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
